@@ -48,7 +48,7 @@ body(Json) - {
 # Test Incoming API
 url - http://127.0.0.1:8000/api/incomings/manage_account/
 method - Post
-header - {"ACTION":"create"}
+header - {"ACTION":"create", "CL-X-TOKEN":"account token from account table"} //support(create, update, delete)
 body(Json) - {
     "destination_id": "d5e26815-1c61-4d29-aad2-78ba9b6214b5", // your destination id
     "data": "text"
